@@ -96,24 +96,28 @@ console.log('score:' + score);
 
 //Q7 uses an array of possible answers, if correct gives 1 pt. 
 
-const jobs = ['waitress', 'painter', 'teacher', 'professor', 'dishwasher', 'wrestler', 'driver', 'server', 'landscaper', 'gardener'];
+const jobs = [' waitress', ' painter', ' electrician', ' teacher', ' carpenter', ' dishwasher', ' wrestler', ' driver', ' fire-breather', ' landscaper', ' nanny'];
 
-const oneJob = prompt('Last one, ' + username + '!! I\'ve done a lot of things to make money in my lifetime. Can you guess one position I\'ve had?').toLowerCase();
+for(let i = 0; i < 6; i++){
+    const oneJob = prompt('Last one, ' + username + '!! I\'ve done a lot of things to make money in my lifetime. Can you guess one position I\'ve had?').toLowerCase();
 
-console.log('Job guess: ' + oneJob);
+    console.log('Job guess: ' + oneJob);
 
-if(jobs.includes(oneJob)){
-    alert('YES! I have totally been a ' + oneJob + '.');
-    score = score + 1;
-}
+    if(jobs.includes(oneJob)){
+        alert('YES! I have totally been a ' + oneJob + '. Here are just a few job titles I\'ve had: ' + jobs + '. Whew!');
+        score = score + 1;
+        i = 6;
+    }
 
-else if(!jobs.includes(oneJob)){
-    alert('Nope, I\'ve never been a ' + oneJob + ', but it\'s certainly never too late!');
+    else if(!jobs.includes(oneJob)){
+        alert('Nope, I have not been a ' + oneJob + ', but it\'s certainly never too late! Try again! You have ' + (5 - i) + ' attempts remaining.');
+    }
+
+    if(!jobs.includes(oneJob) && (5 - i) === 0){
+        alert( 'Sorry, ' + username + ', you\'re out of tries. Here are just a few job titles I\'ve had: ' + jobs + '. Whew!');
+    }
 }
 
 console.log('Final Score: ' + score);
 
-alert('Great job, ' + username + '! Your final score is ' + score + '/7. You were really good a sport. Have a wonderful day!');
-
-
-console.log('Final score:' + score);
+alert('Great job, ' + username + '! Your final score is ' + score + '/7. You were really a good sport. Have a wonderful day!');
