@@ -60,7 +60,7 @@ else if(food === 'no' || food === 'n') {
 console.log('score:' + score);
 
 //Question five: Have I traveled overseas? Correct answer: no
-const travel = prompt ('You\'ve really done a bang-up job here today ' + username + '. So, tell me, have I ever traveled overseas?').toLowerCase();
+const travel = prompt ('You\'re doing a bang-up job here ' + username + '. So, tell me, have I ever traveled overseas?').toLowerCase();
 console.log('Overseas travel? Answer: ' + travel);
 if(travel === 'yes' || travel === 'y') {
     alert('Nice try, ' + username + ', but I have never left the country. Well, I went to Toronto once.');
@@ -72,13 +72,13 @@ else if(travel === 'no' || travel === 'n') {
 
 console.log('score:' + score);
 
-//TODO Write a Q6 with 4 guesses, tells too high or too low, how many guesses left, when correct gives 1 point and exits loop
+//Q6 with 4 guesses, tells too high or too low, how many guesses left, when correct gives 1 point and exits loop
 
 for (let i = 0; i < 4; i++){
-    let numDogs = prompt('How many dogs do I have?');
+    const numDogs = prompt('How many dogs do I have?');
     console.log('Dog guess: ' + numDogs);
     if(numDogs == '2'){
-        alert('Yes! I have a Catahoula mix and a white lab Sharpei mix, and they are both a little crazy.');
+        alert('Yes! I have a Catahoula mix and a white lab/Sharpei mix, and they are both a little crazy.');
         score = score + 1;
         i = 4;
     }
@@ -88,11 +88,32 @@ for (let i = 0; i < 4; i++){
     else if(numDogs < 2){
         alert('That\'s not enough dogs for me. You have ' + (3 - i) + ' guesses left!');
     }
+    else(alert(username + ', that isn\'t even a number. You have ' + (3 - i) + ' guesses left!')
+    );
 }
 
 console.log('score:' + score);
 
-// TODO write a Q7 that uses an array of possible answers, if correct gives 1 pt and exits loop. 
+//Q7 uses an array of possible answers, if correct gives 1 pt. 
+
+const jobs = ['waitress', 'painter', 'teacher', 'professor', 'dishwasher', 'wrestler', 'driver', 'server', 'landscaper', 'gardener'];
+
+const oneJob = prompt('Last one, ' + username + '!! I\'ve done a lot of things to make money in my lifetime. Can you guess one position I\'ve had?').toLowerCase();
+
+console.log('Job guess: ' + oneJob);
+
+if(jobs.includes(oneJob)){
+    alert('YES! I have totally been a ' + oneJob + '.');
+    score = score + 1;
+}
+
+else if(!jobs.includes(oneJob)){
+    alert('Nope, I\'ve never been a ' + oneJob + ', but it\'s certainly never too late!');
+}
+
+console.log('Final Score: ' + score);
+
+alert('Great job, ' + username + '! Your final score is ' + score + '/7. You were really good a sport. Have a wonderful day!');
 
 
-console.log('score:' + score);
+console.log('Final score:' + score);
