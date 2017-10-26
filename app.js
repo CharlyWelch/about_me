@@ -100,7 +100,7 @@ console.log('score:' + score);
 const jobs = [' waitress', ' painter', ' electrician', ' teacher', ' carpenter', ' dishwasher', ' wrestler', ' driver', ' fire-breather', ' landscaper', ' nanny'];
 
 for(let i = 0; i < 6; i++){
-    const oneJob = prompt('Last one, ' + username + '!! I\'ve done a lot of things to make money in my lifetime. Can you guess one position I\'ve had?').toLowerCase();
+    const oneJob = ( ' ' + prompt('Last one, ' + username + '!! I\'ve done a lot of things to make money in my lifetime. Can you guess one position I\'ve had?').toLowerCase());
 
     console.log('Job guess: ' + oneJob);
 
