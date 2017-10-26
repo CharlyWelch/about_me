@@ -16,6 +16,10 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#ed {
+    background-color: rgba(180, 186, 189, 0.863);
+}
+
 li {
     text-align: center;
     margin: 10px 0px 0px 0px;
@@ -28,7 +32,7 @@ p {
 
 aside {
     position: absolute;
-    top: 0;
+    top: 25%;
     right: 0;
     width: 30%;
     height: 100%;
