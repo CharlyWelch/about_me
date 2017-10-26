@@ -1,6 +1,7 @@
 'use strict';
 
 let score = 0;
+
 // Greet and meet
 const username = prompt('Welcome! What\'s your name?');
 console.log('User name: ' + username);
@@ -80,7 +81,7 @@ for (let i = 0; i < 4; i++){
     if(numDogs == '2'){
         alert('Yes! I have a Catahoula mix and a white lab/Sharpei mix, and they are both a little crazy.');
         score = score + 1;
-        i = 4;
+        i = 4;  //break;
     }
     else if(numDogs > 2){
         alert('That\'s too many dogs! You have ' + (3 - i) + ' guesses left!');
