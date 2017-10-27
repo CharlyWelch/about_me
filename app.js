@@ -37,6 +37,7 @@ console.log('score:' + score);
 //Question three: Do I like arts and crafts? Correct answer: yes
 const crafts = prompt ('Okay, you\'re doing great ' + username + '. Next question: Do I enjoy making art and crafting?' ).toLowerCase();
 console.log('Do I enjoy crafts? Answer: ' + crafts);
+// change to " 'yes' || 'y' "
 if(crafts === 'yes' || crafts === 'y') {
     alert('Darn tootin\' ' + username + '! I especially love wood burning and wool felting, but I\'m always into learning new crafty skills.');
     score = score + 1;
