@@ -9,7 +9,7 @@ console.log('User name: ' + username);
 alert('Hello, ' + username + '! I\'m going to ask you a series of yes/no questions to see how well you know me.');
 
 // Question one: do I have sibs? Correct answer: no
-const siblings = prompt ('First, ' + username + ', do I have any siblings?').toLowerCase();
+const siblings = prompt ('First, do I have any siblings?').toLowerCase();
 console.log('Siblings? Answer: ' + siblings);
 if(siblings === 'yes' || siblings   === 'y') {
     alert('Actually, ' + username + ', I\'m an only child and I was raised by a single mom. But I do have a lot of close friends that feel like siblings to me. Next question!');
@@ -22,7 +22,7 @@ else if(siblings    === 'no' || siblings   === 'n') {
 console.log('score:' + score);
 
 //Question two: do I have children? Correct answer: yes
-const children = prompt ('Do I have any children of my own, ' + username + '?' ).toLowerCase();
+const children = prompt ('Do I have any children of my own?' ).toLowerCase();
 console.log('Children? Answer: ' + children);
 if(children === 'yes' || children === 'y') {
     alert('That\'s right, ' + username + '! I have the sweetest, kindest, and funniest 7-year-old on the planet. His name is Oliver.');
@@ -35,7 +35,7 @@ else if(children === 'no' || children === 'n') {
 console.log('score:' + score);
 
 //Question three: Do I like arts and crafts? Correct answer: yes
-const crafts = prompt ('Okay, you\'re doing great ' + username + '. Next question: Do I enjoy making art and crafting?' ).toLowerCase();
+const crafts = prompt ('Okay, you\'re doing great. Next question: Do I enjoy making art and crafting?' ).toLowerCase();
 console.log('Do I enjoy crafts? Answer: ' + crafts);
 // change to " 'yes' || 'y' "
 if(crafts === 'yes' || crafts === 'y') {
