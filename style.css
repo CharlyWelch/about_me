@@ -2,29 +2,24 @@ body {
     background-image: url("images/dogpark.jpg");
     background-position: center top;
     background-size: cover;
-    width:100%;
-    height: 100%;}
+    font-family: Verdana, Geneva, Tahoma, sans-serif}
     
 h1 {
-    text-align: left;
     font-size: 40px;
     text-align: center;
-    color: rgb(36, 25, 36);
-    font-family: Verdana, Geneva, Tahoma, sans-serif}
+    color: rgb(46, 36, 46)}
 
 h2 {
     text-align: left;
     background-color: rgb(74, 77, 77, 0.5);
-    color: rgb(36, 25, 36);
-    font-family: Verdana, Geneva, Tahoma, sans-serif}
+    color: rgb(36, 25, 36)}
+        
+/* 
+Keep trying to use flexbox.... 
 
-section.list{
-
+.list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
-    margin: 10px 0px 0px 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif}
+    align-items: center} */
 
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif}
